@@ -1,0 +1,4 @@
+{
+  "deuterium_density": 1e20,   // in m^-3
+  "electron_temperature": 20   // in keV
+}
