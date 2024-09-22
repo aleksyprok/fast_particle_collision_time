@@ -2,6 +2,7 @@
 Tests for the relaxation_times module.
 """
 
+import os
 import matplotlib.pyplot as plt
 import numpy as np
 import pytest
@@ -82,7 +83,10 @@ def test_slowing_down_time_alpha_vs_electrons():
     ax.grid(True)
 
     # Save the plot for inspection
-    fig.savefig("slowing_down_time_alpha_vs_electrons.png",
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+    test_plots_dir = os.path.join(test_dir, "test_plots")
+    os.makedirs(test_plots_dir, exist_ok=True)
+    fig.savefig(os.path.join(test_plots_dir, "slowing_down_time_alpha_vs_electrons.png"),
                 dpi=300, bbox_inches="tight")
 
 if __name__ == "__main__":
