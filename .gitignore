@@ -163,3 +163,4 @@ cython_debug/
 
 settings.json
 tests/test_plots
+notebooks/notebook_plots
