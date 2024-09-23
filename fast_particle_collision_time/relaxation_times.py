@@ -88,7 +88,7 @@ def slowing_down_time(test_speed, background_thermal_speed, test_mass, backgroun
             _a_d(background_density, test_charge_state, background_charge_state, test_mass) \
             * _psi(test_speed / (np.sqrt(2) * background_thermal_speed)))
 
-def deflection_time(test_speed, background_thermal_speed, test_mass, background_mass,
+def deflection_time(test_speed, background_thermal_speed, test_mass,
                     background_density, test_charge_state, background_charge_state):
     """
     Calculates the deflection time (see page Eq. 2.14.2 of Wesson, 2011).
